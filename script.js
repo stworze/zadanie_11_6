@@ -22,7 +22,7 @@ $(function(){
 			var $columnDelete = $('<button>').addClass('btn-delete').text('x');
 			var $columnAddCard = $('<button>').addClass('add-card').text('Add a card');
 
-			$columnDelete.click(function() {
+			$columnDelete.on('click',function() {
         		self.removeColumn();
 			});
 			//Add a note after clicking on the button:
